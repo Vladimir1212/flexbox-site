@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+<body>
+   
+   <header>
+       <div class="logo">
+           <a href="index.html"><img class="graficlogo" src="img/logo.png" alt="Logo"></a>
+       </div>
+       <nav>
+           <div class="topnav" id="myTopnav">
+               <a href="index.html">HOME</a>
+               <a href="projects.html">PROJECTS</a>
+               <a href="blog.html">BLOG</a>
+               <a href="contact.html">CONTACT</a>
+               <a href="about.html">ABOUT</a>
+               <a href="services.html">SERVICES</a>
+               <a href="location.html">LOCATION</a>
+               <a id="menu" href="#" class="icon">&#9776;</a>
+           </div>
+       </nav>
+   </header>
+   <main>
+      <h1>Location</h1>
+       <div id="map"></div>
+   </main>
+   <footer>
+       <nav>
+               <a href="index.html">HOME</a>
+               <a href="projects.html">PROJECTS</a>
+               <a href="blog.html">BLOG</a>
+               <a href="contact.html">CONTACT</a>
+               <a href="about.html">ABOUT</a>
+               <a href="services.html">SERVICES</a>
+               <a href="location.html">LOCATION</a>
+       </nav>
+       <div class="logo">
+           <a href="index.html"><img class="graficlogo" src="img/logo.png"></a>
+       </div>
+       <div class="social">
+       <a href="#"><img src="img/social_icons/twi.png" alt=""></a>
+       <a href="#"><img src="img/social_icons/intsta.png" alt=""></a>
+       <a href="#"><img src="img/social_icons/yuotube.png" alt=""></a>
+       <a href="#"><img src="img/social_icons/fb.png" alt=""></a>
+       <a href="#"><img src="img/social_icons/in.png" alt=""></a>
+       </div>
+       <p>Woyax Pro 2018</p>
+   </footer>
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: 47.8092944, lng: 35.1968462};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8CvPWGVohpUtKOTIPTXyHgEMvKnqg3wM&callback=initMap">
+    </script>
+    
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
